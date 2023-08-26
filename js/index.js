@@ -1,5 +1,5 @@
 
-//! Donde se van a guardar los datos ingresados.
+//* Donde se van a guardar los datos ingresados.
 
 const gastos = []; 
 
@@ -7,10 +7,10 @@ let totalGastos = 0;
 let dinero = [];
 let totalDinero = 0;
 
-//! Agrega los valores ingresados al array dinero, a su vez aumenta el valor del contador totalDinero
+//* Agrega los valores ingresados al array dinero, a su vez aumenta el valor del contador totalDinero
 
 function agregarSueldo(){
-  const descripcion = prompt('Detalle:');
+  const descripcion = prompt('Descripcion del ingreso:');
   const monto = parseFloat(prompt('Ingrese el monto total del deposito:'));
   
   dinero.push({ descripcion, monto });
@@ -19,7 +19,7 @@ function agregarSueldo(){
   alert(`Ingresó: ${descripcion}  $${monto.toFixed(2)}`); 
   }
 
-//! Esta funcion agrega los valores ingresados como un gasto al array gastos. Aumenta el valor de totalGastos.
+//* Esta funcion agrega los valores ingresados como un gasto al array gastos. Aumenta el valor de totalGastos.
 
 function agregarGasto() {
   const descripcion = prompt('Ingrese la descripción del gasto:');
@@ -31,7 +31,7 @@ function agregarGasto() {
   alert(`Gasto agregado: ${descripcion}  $${monto.toFixed(2)}`);
 }
 
-//! Recorremos el array para mostrar los gastos con su descripcion y monto. Al final imprimimos el valor de totalGastos. La suma de todos los montos ingresados como gasto.
+//* Recorremos el array para mostrar los gastos con su descripcion y monto. Al final imprimimos el valor de totalGastos. La suma de todos los montos ingresados como gasto.
 
 function mostrarGastos() {
   alert('Lista de gastos:');
@@ -42,14 +42,14 @@ function mostrarGastos() {
 }
 
 
-//! Para mostrar el saldo que nos queda disponible, tomamos el resultado de totalDinero y lo restamos al totalGastos.
+//* Para mostrar el saldo que nos queda disponible, tomamos el resultado de totalDinero y lo restamos al totalGastos.
 
 function mostrarSaldo() {
   const saldo = totalDinero - totalGastos;
   alert(`El saldo disponible es: $${saldo.toFixed(2)}`);
 }
 
-//! Hago las preguntas para que enpieze el programa o termine
+//* Hago las preguntas para que enpieze el programa o termine
 
 while (true) {
   const opcion = parseInt(prompt('Seleccione una opción:\n1. Ingresar dinero\n2. Ingresar gasto\n3. Mostrar Gastos\n4.Mostrar Saldo\n5. Salir del programa'));
