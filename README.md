@@ -18,7 +18,7 @@ Para esta entrega el programa tiene que contar con lo siguiente:
 
 7.Metodos para los arrays ✅
 
-# _A continuacion voy a explicar un poco el funcionamiento del programa.
+# A continuacion voy a explicar un poco el funcionamiento del programa.
 
 ## 1._Arrays para almacenar datos:_
 + 'gastos': Un array que almacena los gastos junto con sus descripciones y montos ingresados
@@ -28,7 +28,7 @@ Para esta entrega el programa tiene que contar con lo siguiente:
 + 'totalGastos': El total de gastos ingresados
 + 'totalIngreso': El total de los ingresos que se ingresaron en el programa.
 
-## 3. _Funciones para agregar ingresos y gastos:_
+## 3._Funciones para agregar ingresos y gastos:_
 + 'agregarSueldo': Permite ingresar el detalle de los ingresos, estos se agregan al array 'dinero'. Actualizando el contador 'totalDinero'
 + 'agregarGasto': Permite ingrear el detalle de los gastos, estos se agregan al array 'gastos'. Actualizando el contador 'totalGastos'
 
